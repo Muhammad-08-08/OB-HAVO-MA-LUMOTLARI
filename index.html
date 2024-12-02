@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob-Havo Ma'lumotlari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold text-gray-700 text-center mb-4">Shaharni Kiriting</h1>
+        <div class="flex gap-4">
+            <input type="text" id="cityInput" class="w-full border border-gray-300 rounded-lg p-2"
+                placeholder="Shahar nomi...">
+            <button id="getWeather" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                Qidirish
+            </button>
+        </div>
+        <div id="weatherContainer" class="mt-6 hidden">
+            <div class="text-center">
+                <h2 class="text-xl font-semibold" id="cityName"></h2>
+                <p class="text-gray-600" id="weatherDescription"></p>
+                <img id="weatherIcon" class="mx-auto my-4" alt="Weather Icon">
+                <p class="text-2xl font-bold" id="temperature"></p>
+                <p class="text-gray-600" id="humidity"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
